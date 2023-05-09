@@ -1,1 +1,16 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.page {
+	&__main-start {}
+
+	&__main-blog {}
+}
+
+.title-main {
+	font-weight: 400;
+	@include adaptiveValue("font-size", 22, 16);
+	font-size: 22px;
+	line-height: math.div(60 , 22);
+
+	
+	
+}
