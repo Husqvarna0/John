@@ -12,7 +12,12 @@ function moveMenuElementToFirstPlace() {
 		let firstElement = menu.firstElementChild;
 		let secondElement = menu.children[1];
 
-		menu.insertBefore(secondElement, firstElement);
+		//	menu.insertBefore(secondElement, firstElement);
+		secondElement.classList.add('open');
+	} else if (document.location.pathname === '/work.html') {
+		let menu = document.getElementById('menu__list');
+		let firstElement = menu.firstElementChild;
+		let secondElement = menu.children[0];
 		secondElement.classList.add('open');
 	}
 }
