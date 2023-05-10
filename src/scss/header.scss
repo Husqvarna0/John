@@ -79,7 +79,10 @@
 		}
 	}
 
-	&__item {}
+	&__item {
+
+		
+	}
 
 	&__link {
 		font-weight: 500;
@@ -87,6 +90,12 @@
 		line-height: math.div(29, 20);
 		transition: color 0.3s ease 0s;
 
+		.open &{
+			
+		color: $redColor;
+				
+			
+		}
 		@media (any-hover: hover) {
 			&:hover {
 				color: $redColor;

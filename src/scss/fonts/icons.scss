@@ -8,9 +8,24 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 [class*="_icon-"] {
 	&:before {
 		@extend %ic;
 		display: block;
 	}
 }
+
+._icon-facebook:before {
+	content: "\e900";
+ }
+ ._icon-instagram:before {
+	content: "\e901";
+ }
+ ._icon-linkedin:before {
+	content: "\e902";
+ }
+ ._icon-twitter:before {
+	content: "\e903";
+ }
+ 

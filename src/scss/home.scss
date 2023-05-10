@@ -105,7 +105,7 @@
 
 	&__title {}
 
-	
+
 
 	&__more {
 		position: relative;
@@ -166,7 +166,7 @@
 	}
 
 	&__link {
-		
+
 		transition: color 0.3s ease 0s;
 
 		&:hover {
@@ -204,3 +204,129 @@
 }
 
 //========================================================================================================================================================
+.page {
+
+	&__main-portfolio {}
+}
+
+.main-portfolio {
+	padding: rem(15) rem(0) rem(83) rem(0);
+
+	&__container {}
+
+	&__content {
+
+		padding-top: rem(22);
+
+	}
+
+	&__work {
+		&:not(:last-child) {
+			margin-bottom: rem(31);
+
+		}
+	}
+}
+
+.main-blog {
+
+	&__header {}
+
+	&__title {}
+}
+
+
+
+.work-main-portfolio {
+	display: flex;
+	border-bottom: 1px solid #E0E0E0;
+	width: 100%;
+	gap: rem(18);
+	padding: rem(0) rem(0) rem(25) rem(0);
+
+	@media (max-width:$tablet) {
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+
+	}
+
+	&__image {
+		overflow: hidden;
+
+		@media (max-width:$tablet) {
+			width: 100%;
+		}
+			img {
+				overflow: hidden;
+				max-width: rem(246);
+				max-height: rem(180);
+				border-radius: rem(6);
+				transition: transform 0.3s ease 0s;
+
+				@media (any-hover: hover) {
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+
+				@media (max-width:$tablet) {
+					width: 100%;
+				}
+			}
+		}
+
+		&__body {
+			display: flex;
+			flex-direction: column;
+			gap: rem(22);
+		}
+
+		&__title {
+			font-weight: 700;
+			@include adaptiveValue("font-size", 30, 24);
+			line-height: math.div(44, 30);
+
+		}
+
+		&__link {
+			transition: color 0.3s ease 0s;
+
+			&:hover {
+				color: $redColor;
+			}
+		}
+
+		&__description {
+			display: flex;
+			gap: rem(26);
+		}
+
+		&__date {
+			font-weight: 900;
+			@include adaptiveValue("font-size", 18, 14);
+			line-height: math.div(20, 18);
+			color: #fff;
+			background: #142850;
+			border-radius: rem(16);
+			padding: rem(5) rem(10);
+		}
+
+		&__tag {
+			font-weight: 400;
+			@include adaptiveValue("font-size", 20, 18);
+			line-height: math.div(29, 20);
+			color: #8695A4;
+		}
+
+		&__text {
+			font-weight: 400;
+			@include adaptiveValue("font-size", 16, 14);
+			line-height: math.div(24, 16);
+			max-width: rem(560);
+		}
+
+		&__link {}
+	}
+
+	//========================================================================================================================================================

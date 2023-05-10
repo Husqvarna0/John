@@ -1,0 +1,42 @@
+.page {
+
+	&__portfolio {}
+}
+
+.portfolio {
+
+	&__container {}
+
+	&__header {}
+
+	&__title {}
+
+	&__work {}
+}
+
+.work-portfolio {
+	display: flex;
+	border-bottom: 1px solid #E0E0E0;
+	width: 100%;
+	gap: rem(18);
+	padding: rem(0) rem(0) rem(25) rem(0);
+
+	&__image {}
+
+	&__link {}
+
+	&__body {}
+
+	&__title {}
+
+	&__description {}
+
+	&__date {}
+
+	&__text {}
+}
+
+.work--portfolio {
+
+	&__tag {}
+}
