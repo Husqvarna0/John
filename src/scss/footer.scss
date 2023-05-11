@@ -12,15 +12,18 @@
 	&__social {
 		display: flex;
 		gap: rem(35);
+
 	}
 
-	&__link {}
+	&__link {
+		color: $mainColor;
+	}
 
 	&__copiright {
 		font-weight: 400;
 		@include adaptiveValue("font-size", 14, 12);
-		line-height: math.div( 21, 14);
-		
+		line-height: math.div(21, 14);
+
 	}
 }
 
